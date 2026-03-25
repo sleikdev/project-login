@@ -26,6 +26,8 @@ main{
         left: 50%;
         transform: translate(-50%, -50%);
         overflow: hidden;
+        transition: width .5s, height .5s;
+        transition-timing-function: ease;
 
         background-color: white;
         width: 250px;
@@ -35,10 +37,11 @@ main{
     }
 
     div#images{
+        display: block;
         background: #016268 url(../images/login-project.jpg) no-repeat;
         background-size: cover;
         height: 250px;
-        display: block;
+        background-position: center,right;
     }
 
     div#form{
