@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mediaquery.css">
 </head>
@@ -18,7 +19,22 @@
                 <p>
                     Welcome back! <br> Log in to access your account.
                 </p>
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <span id="login" class="material-symbols-outlined" onclick="clickMenu()">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Your best email..." autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="field">
+                        <span id="pass" class="material-symbols-outlined" onclick="clickMenu()">vpn_key</span>
+                        <input type="password" name="password" id="ipass" placeholder="Your password..." autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="ipass">Pass</label>
+                    </div>
+                    <input type="submit" value="Submit">
+                    <a href="forgot.html">Forgot password
+                        <span id="forgot" class="material-symbols-outlined" onclick="clickMenu()">mail</span>
+                    </a>
+                </form>
             </div>
         </section>
     </main>
